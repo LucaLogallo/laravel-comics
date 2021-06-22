@@ -2,6 +2,6 @@
 
 @section('content')
 
-  <h1>dio cane i collectibles</h1>
+  <h1>Collectibles</h1>
 
 @endsection

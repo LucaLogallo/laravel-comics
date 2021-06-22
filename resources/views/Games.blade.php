@@ -2,6 +2,6 @@
 
 @section('content')
 
-  <h1>dio cane I Gnaes</h1>
+  <h1>Games</h1>
 
 @endsection

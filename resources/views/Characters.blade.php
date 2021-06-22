@@ -2,6 +2,6 @@
 
 @section('content')
 
-  <h1>dio i characters</h1>
+  <h1>Characters</h1>
 
 @endsection

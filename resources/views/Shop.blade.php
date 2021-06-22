@@ -2,6 +2,6 @@
 
 @section('content')
 
-  <h1>dio cane lo shop</h1>
+  <h1>Shop</h1>
 
 @endsection
