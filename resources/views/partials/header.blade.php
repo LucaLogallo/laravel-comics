@@ -1,53 +1,57 @@
 <header>
-  <div class="box60">
-    <div class="row due">
+  <div class="row uno">
+      <div class="box80">
       {{-- box che ha altezza 20px background color : #0282f9 --}}
       <span>DC POWER<span>sm</span>VISA</span>
       <span>ADDITIONAL DC SITES </span>
-    </div>
-    <div class="row due">
+      </div>
+  </div>
+  <div class="row due">
+    <div class="box80">
+
       <div>
         {{-- div che contiene il logo dic --}}
-        <img src="" alt="">
+        <img src="{{ asset('img/dc-logo.png') }}" alt="">
       </div>
-      <div>
+      <div class="lista">
         <ul>
-          <li>
-            <a class="{{(request()->is('/Characters')) ? 'active' : ''}}" href="{{route('Characters')}}">Characters</a>
+          <li class="{{(request()->is('Characters')) ? 'active' : ''}}">
+            <a  href="{{route('Characters')}}">Characters</a>
+          </li>
+          <li class="{{(request()->is('Comics')) ? 'active' : ''}}">
+            <a href="{{route('Home')}}">Comics</a>
+          </li>
+          <li class="{{(request()->is('Movies')) ? 'active' : ''}}">
+            <a  href="{{route('Movies')}}">Movies</a>
+            </li>
+          <li class="{{(request()->is('Tv')) ? 'active' : ''}}">
+            <a  href="{{route('Tv')}}">Tv</a>
+          </li>
+          <li class="{{(request()->is('Games')) ? 'active' : ''}}">  
+            <a  href="{{route('Games')}}">Games</a>
+          </li>
+          <li class="{{(request()->is('Collectibles')) ? 'active' : ''}}">
+            <a  href="{{route('Collectibles')}}">Collectibles</a>
+          </li>
+          <li class="{{(request()->is('Videos')) ? 'active' : ''}}">
+            <a  href="{{route('Videos')}}">Videos</a>
+          </li>
+          <li class="{{(request()->is('Fans')) ? 'active' : ''}}">  
+            <a  href="{{route('Fans')}}">Fans</a>
+          </li>
+          <li class="{{(request()->is('News')) ? 'active' : ''}}">
+            <a  href="{{route('News')}}">News</a>
+          </li>
+          <li class="{{(request()->is('Shop')) ? 'active' : ''}}">
+            <a  href="{{route('Shop')}}">Shop</a>
           </li>
           <li>
-            <a class="{{(request()->is('/Comics')) ? 'active' : ''}}" href="{{route('Comics')}}">Comics</a>
-          </li>
-          <li>
-            <a class="{{(request()->is('/Movies')) ? 'active' : ''}}" href="{{route('Movies')}}">Movies</a>
-          </li>
-          <li>
-            <a class="{{(request()->is('/Tv')) ? 'active' : ''}}" href="{{route('Tv')}}">Tv</a>
-          </li>
-          <li>  
-            <a class="{{(request()->is('/Games')) ? 'active' : ''}}" href="{{route('Games')}}">Games</a>
-          </li>
-          <li>
-            <a class="{{(request()->is('/Collectibles')) ? 'active' : ''}}" href="{{route('Collectibles')}}">Collectibles</a>
-          </li>
-          <li>
-            <a class="{{(request()->is('/Videos')) ? 'active' : ''}}" href="{{route('Videos')}}">Videos</a>
-          </li>
-          <li>  
-            <a class="{{(request()->is('/Fans')) ? 'active' : ''}}" href="{{route('Fans')}}">Fans</a>
-          </li>
-          <li>
-            <a class="{{(request()->is('/News')) ? 'active' : ''}}" href="{{route('News')}}">News</a>
-          </li>
-          <li>
-            <a class="{{(request()->is('/Shop')) ? 'active' : ''}}" href="{{route('Shop')}}">Shop</a>
+            <span>ricerca</span>
           </li>
         </ul>
       </div>
-      <div>
-        <span>ricerca</span>
-      </div>
     </div>
+    
   </div>
 
 </header>

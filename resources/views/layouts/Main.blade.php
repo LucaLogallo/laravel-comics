@@ -9,6 +9,8 @@
 </head>
 <body>
   @include('partials.header')
+  
+  @include('partials.jumbotron')
 
   @yield('content')
 
